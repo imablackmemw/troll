@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ВНИМАНИЕ! ВИРУС!</title>
+    <style>
+        body {
+            background-color: #000;
+            color: red;
+            font-family: monospace;
+            padding: 50px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .warning {
+            color: yellow;
+            font-size: 36px;
+            text-transform: uppercase;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+        .virus-list {
+            text-align: left;
+            margin: 30px auto;
+            max-width: 600px;
+            color: #0f0;
+        }
+        .fake-button {
+            background: red;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 20px;
+        }
+        .fake-button:hover {
+            background: #ff5555;
+        }
+    </style>
+</head>
+<body>
+    <div class="warning">⚠ ВНИМАНИЕ! ВИРУСНАЯ АТАКА!</div>
+    
+    <p>Файл <strong>Virus.exe.apk</strong> успешно установлен на ваше устройство.</p>
+    
+    <div class="virus-list">
+        <h3>Обнаружено 16 вредоносных программ:</h3>
+        <ul>
+            <li>Trojan.AndroidOS.FakeApp.a</li>
+            <li>Backdoor.SilentLogger</li>
+            <li>Worm.SMSstealer</li>
+            <li>Ransomware.CryptoLocker</li>
+            <li>Adware.PopupStorm</li>
+            <li>Spyware.Keylogger</li>
+            <li>Riskware.BitcoinMiner</li>
+            <li>... и ещё 8 скрытых угроз</li>
+        </ul>
+    </div>
+
+    <p>Ваши пароли, фотографии и банковские данные уже передаются на сервер злоумышленников.</p>
+    
+    <button class="fake-button" onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">
+        СРОЧНО ЛЕЧИТЬ (НАЖМИ!)
+    </button>
+    
+    <p style="color:#888; font-size:12px; margin-top:50px;">* Это шутка. Расслабься и улыбнись! 😄</p>
+
+    <script>
+        // Автопрокрутка для драматизма
+        window.scrollTo(0, 0);
+        let scrollPos = 0;
+        const scrollInterval = setInterval(() => {
+            scrollPos += 2;
+            window.scrollTo(0, scrollPos);
+            if(scrollPos > 500) clearInterval(scrollInterval);
+        }, 50);
+    </script>
+</body>
+</html>
